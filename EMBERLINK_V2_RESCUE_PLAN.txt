@@ -1,0 +1,30 @@
+EMBERLINK V2 RESCUE PLAN
+
+1. Reframe the product honestly.
+   - Not "internet still works".
+   - It is a local-first DTN mesh node simulator.
+
+2. Fix the packet lifecycle.
+   - Messages now support TTL, deduplication, received/archive states, and feed cleanup.
+
+3. Reduce clutter.
+   - Live feed excludes archived traffic by default.
+   - Operators can mark packets received or archive them.
+
+4. Reduce misuse.
+   - Relay, mission, capsule, and message-state changes require an operator key.
+   - Civilian packet input is rate-limited.
+   - Duplicate submissions inside a short window are suppressed.
+
+5. Improve realism.
+   - Different relays drain at different rates.
+   - Charging is gradual, not instant.
+   - Relays auto-sleep at zero battery.
+
+6. Strengthen the story for judges.
+   - Explain that aliens killed long-range centralized infrastructure, not all local compute.
+   - Nearby devices and portable relays still exchange compact packets during contact windows.
+
+7. MVP claim.
+   - This is a browser-based console for one resilient node.
+   - The next real-world version would be Android/desktop clients using BLE, Wi-Fi Direct, LoRa, or portable relay hardware.
